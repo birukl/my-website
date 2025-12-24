@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Crypto Investment Dashboard</title>
+<link rel="stylesheet" href="style.css">
+
+
+<script src="https://s3.tradingview.com/tv.js"></script>
+
+</head>
+
+<body>
+
+<h1>📊 Crypto Investment Dashboard</h1>
+<button onclick="document.body.classList.toggle('dark')">🌙 Toggle Dark Mode</button>
+
+<table>
+<thead>
+<tr>
+<th>Coin</th>
+<th>Entry Date</th>
+<th>Entry</th>
+<th>Live</th>
+<th>Alert</th>
+<th>Investment</th>
+<th>P/L %</th>
+<th>P/L $</th>
+<th>Equity</th>
+<th>Big Profit $</th>
+</tr>
+</thead>
+<tbody id="table"></tbody>
+<tfoot>
+<tr>
+<th colspan="5">TOTAL</th>
+<th>$5,000</th>
+<th id="totalPct">--</th>
+<th id="totalUsd">--</th>
+<th id="totalEquity">--</th>
+<th>—</th>
+</tr>
+</tfoot>
+</table>
+
+<div class="card">
+<h2>📊 Equity Distribution</h2>
+<div id="bars"></div>
+</div>
+
+<h2>📈 Charts</h2>
+<div id="charts"></div>
+
+<script src="script.js">
+</script>
+
+</body>
+</html>
